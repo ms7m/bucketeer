@@ -1,0 +1,336 @@
+2020-08-26 02:11:01.505 | ERROR    | bucketeer.bucketeer:__enter__:45 - Unable to grab latest key due to unhandled error.
+Traceback (most recent call last):
+
+  File "testing.py", line 28, in <module>
+    with BucketeerContext(current_bucket, "testService") as api_key:
+         │                └ <bucketeer.bucketeer.Bucketeer object at 0x7f6bfa2f9990>
+         └ <class 'bucketeer.bucketeer.BucketeerContext'>
+
+> File "/home/mustafa/Development/bucketeer/bucketeer/bucketeer.py", line 40, in __enter__
+    key_value=try_latest_key_from_obj['_key'],
+              └ '63303a10-f715-4a2b-b0db-7088e653d8de'
+
+TypeError: string indices must be integers
+2020-08-26 02:12:08.486 | ERROR    | bucketeer.bucketeer:__enter__:45 - Unable to grab latest key due to unhandled error.
+Traceback (most recent call last):
+
+  File "testing.py", line 28, in <module>
+    with BucketeerContext(current_bucket, "testService") as api_key:
+         │                └ <bucketeer.bucketeer.Bucketeer object at 0x7f7707bd7990>
+         └ <class 'bucketeer.bucketeer.BucketeerContext'>
+
+> File "/home/mustafa/Development/bucketeer/bucketeer/bucketeer.py", line 40, in __enter__
+    key_value=try_latest_key_from_obj['_key'],
+              └ '51bd8528-cf38-4274-b67a-066540431273'
+
+TypeError: string indices must be integers
+2020-08-26 02:12:08.508 | ERROR    | bucketeer.bucketeer:__enter__:45 - Unable to grab latest key due to unhandled error.
+Traceback (most recent call last):
+
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7f770865d8c0>
+    └ <Thread(Thread-3, started 140149188867840)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x7f770865d680>
+    └ <Thread(Thread-3, started 140149188867840)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-3, started 140149188867840)>
+    │    │        │    └ (2,)
+    │    │        └ <Thread(Thread-3, started 140149188867840)>
+    │    └ <function subrunner at 0x7f7707b7c0e0>
+    └ <Thread(Thread-3, started 140149188867840)>
+
+  File "testing.py", line 34, in subrunner
+    with BucketeerContext(current_bucket, "testService") as api_key:
+         │                │                                 └ None
+         │                └ <bucketeer.bucketeer.Bucketeer object at 0x7f7707bd7990>
+         └ <class 'bucketeer.bucketeer.BucketeerContext'>
+
+> File "/home/mustafa/Development/bucketeer/bucketeer/bucketeer.py", line 40, in __enter__
+    key_value=try_latest_key_from_obj['_key'],
+              └ '51bd8528-cf38-4274-b67a-066540431273'
+
+TypeError: string indices must be integers
+2020-08-26 02:12:08.505 | ERROR    | bucketeer.bucketeer:__enter__:45 - Unable to grab latest key due to unhandled error.
+Traceback (most recent call last):
+
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7f770865d8c0>
+    └ <Thread(Thread-1, started 140149205653248)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x7f770865d680>
+    └ <Thread(Thread-1, started 140149205653248)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1, started 140149205653248)>
+    │    │        │    └ (0,)
+    │    │        └ <Thread(Thread-1, started 140149205653248)>
+    │    └ <function subrunner at 0x7f7707b7c0e0>
+    └ <Thread(Thread-1, started 140149205653248)>
+
+  File "testing.py", line 34, in subrunner
+    with BucketeerContext(current_bucket, "testService") as api_key:
+         │                │                                 └ None
+         │                └ <bucketeer.bucketeer.Bucketeer object at 0x7f7707bd7990>
+         └ <class 'bucketeer.bucketeer.BucketeerContext'>
+
+> File "/home/mustafa/Development/bucketeer/bucketeer/bucketeer.py", line 40, in __enter__
+    key_value=try_latest_key_from_obj['_key'],
+              └ '51bd8528-cf38-4274-b67a-066540431273'
+
+TypeError: string indices must be integers
+2020-08-26 02:12:08.514 | ERROR    | bucketeer.bucketeer:__enter__:45 - Unable to grab latest key due to unhandled error.
+Traceback (most recent call last):
+
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7f770865d8c0>
+    └ <Thread(Thread-2, started 140149197260544)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x7f770865d680>
+    └ <Thread(Thread-2, started 140149197260544)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-2, started 140149197260544)>
+    │    │        │    └ (1,)
+    │    │        └ <Thread(Thread-2, started 140149197260544)>
+    │    └ <function subrunner at 0x7f7707b7c0e0>
+    └ <Thread(Thread-2, started 140149197260544)>
+
+  File "testing.py", line 34, in subrunner
+    with BucketeerContext(current_bucket, "testService") as api_key:
+         │                │                                 └ None
+         │                └ <bucketeer.bucketeer.Bucketeer object at 0x7f7707bd7990>
+         └ <class 'bucketeer.bucketeer.BucketeerContext'>
+
+> File "/home/mustafa/Development/bucketeer/bucketeer/bucketeer.py", line 40, in __enter__
+    key_value=try_latest_key_from_obj['_key'],
+              └ '51bd8528-cf38-4274-b67a-066540431273'
+
+TypeError: string indices must be integers
+2020-08-26 02:12:08.523 | ERROR    | bucketeer.bucketeer:__enter__:45 - Unable to grab latest key due to unhandled error.
+Traceback (most recent call last):
+
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7f770865d8c0>
+    └ <Thread(Thread-8, started 140148675180288)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x7f770865d680>
+    └ <Thread(Thread-8, started 140148675180288)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-8, started 140148675180288)>
+    │    │        │    └ (7,)
+    │    │        └ <Thread(Thread-8, started 140148675180288)>
+    │    └ <function subrunner at 0x7f7707b7c0e0>
+    └ <Thread(Thread-8, started 140148675180288)>
+
+  File "testing.py", line 34, in subrunner
+    with BucketeerContext(current_bucket, "testService") as api_key:
+         │                │                                 └ None
+         │                └ <bucketeer.bucketeer.Bucketeer object at 0x7f7707bd7990>
+         └ <class 'bucketeer.bucketeer.BucketeerContext'>
+
+> File "/home/mustafa/Development/bucketeer/bucketeer/bucketeer.py", line 40, in __enter__
+    key_value=try_latest_key_from_obj['_key'],
+              └ '51bd8528-cf38-4274-b67a-066540431273'
+
+TypeError: string indices must be integers
+2020-08-26 02:12:08.509 | ERROR    | bucketeer.bucketeer:__enter__:45 - Unable to grab latest key due to unhandled error.
+Traceback (most recent call last):
+
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7f770865d8c0>
+    └ <Thread(Thread-4, started 140149180475136)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x7f770865d680>
+    └ <Thread(Thread-4, started 140149180475136)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-4, started 140149180475136)>
+    │    │        │    └ (3,)
+    │    │        └ <Thread(Thread-4, started 140149180475136)>
+    │    └ <function subrunner at 0x7f7707b7c0e0>
+    └ <Thread(Thread-4, started 140149180475136)>
+
+  File "testing.py", line 34, in subrunner
+    with BucketeerContext(current_bucket, "testService") as api_key:
+         │                │                                 └ None
+         │                └ <bucketeer.bucketeer.Bucketeer object at 0x7f7707bd7990>
+         └ <class 'bucketeer.bucketeer.BucketeerContext'>
+
+> File "/home/mustafa/Development/bucketeer/bucketeer/bucketeer.py", line 40, in __enter__
+    key_value=try_latest_key_from_obj['_key'],
+              └ '51bd8528-cf38-4274-b67a-066540431273'
+
+TypeError: string indices must be integers
+2020-08-26 02:12:08.525 | ERROR    | bucketeer.bucketeer:__enter__:45 - Unable to grab latest key due to unhandled error.
+Traceback (most recent call last):
+
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7f770865d8c0>
+    └ <Thread(Thread-7, started 140149155297024)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x7f770865d680>
+    └ <Thread(Thread-7, started 140149155297024)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-7, started 140149155297024)>
+    │    │        │    └ (6,)
+    │    │        └ <Thread(Thread-7, started 140149155297024)>
+    │    └ <function subrunner at 0x7f7707b7c0e0>
+    └ <Thread(Thread-7, started 140149155297024)>
+
+  File "testing.py", line 34, in subrunner
+    with BucketeerContext(current_bucket, "testService") as api_key:
+         │                │                                 └ None
+         │                └ <bucketeer.bucketeer.Bucketeer object at 0x7f7707bd7990>
+         └ <class 'bucketeer.bucketeer.BucketeerContext'>
+
+> File "/home/mustafa/Development/bucketeer/bucketeer/bucketeer.py", line 40, in __enter__
+    key_value=try_latest_key_from_obj['_key'],
+              └ '51bd8528-cf38-4274-b67a-066540431273'
+
+TypeError: string indices must be integers
+2020-08-26 02:12:08.535 | ERROR    | bucketeer.bucketeer:__enter__:45 - Unable to grab latest key due to unhandled error.
+Traceback (most recent call last):
+
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7f770865d8c0>
+    └ <Thread(Thread-9, started 140148666787584)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x7f770865d680>
+    └ <Thread(Thread-9, started 140148666787584)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-9, started 140148666787584)>
+    │    │        │    └ (8,)
+    │    │        └ <Thread(Thread-9, started 140148666787584)>
+    │    └ <function subrunner at 0x7f7707b7c0e0>
+    └ <Thread(Thread-9, started 140148666787584)>
+
+  File "testing.py", line 34, in subrunner
+    with BucketeerContext(current_bucket, "testService") as api_key:
+         │                │                                 └ None
+         │                └ <bucketeer.bucketeer.Bucketeer object at 0x7f7707bd7990>
+         └ <class 'bucketeer.bucketeer.BucketeerContext'>
+
+> File "/home/mustafa/Development/bucketeer/bucketeer/bucketeer.py", line 40, in __enter__
+    key_value=try_latest_key_from_obj['_key'],
+              └ '51bd8528-cf38-4274-b67a-066540431273'
+
+TypeError: string indices must be integers
+2020-08-26 02:12:08.537 | ERROR    | bucketeer.bucketeer:__enter__:45 - Unable to grab latest key due to unhandled error.
+Traceback (most recent call last):
+
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7f770865d8c0>
+    └ <Thread(Thread-6, started 140149163689728)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x7f770865d680>
+    └ <Thread(Thread-6, started 140149163689728)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-6, started 140149163689728)>
+    │    │        │    └ (5,)
+    │    │        └ <Thread(Thread-6, started 140149163689728)>
+    │    └ <function subrunner at 0x7f7707b7c0e0>
+    └ <Thread(Thread-6, started 140149163689728)>
+
+  File "testing.py", line 34, in subrunner
+    with BucketeerContext(current_bucket, "testService") as api_key:
+         │                │                                 └ None
+         │                └ <bucketeer.bucketeer.Bucketeer object at 0x7f7707bd7990>
+         └ <class 'bucketeer.bucketeer.BucketeerContext'>
+
+> File "/home/mustafa/Development/bucketeer/bucketeer/bucketeer.py", line 40, in __enter__
+    key_value=try_latest_key_from_obj['_key'],
+              └ '51bd8528-cf38-4274-b67a-066540431273'
+
+TypeError: string indices must be integers
+2020-08-26 02:12:08.542 | ERROR    | bucketeer.bucketeer:__enter__:45 - Unable to grab latest key due to unhandled error.
+Traceback (most recent call last):
+
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7f770865d8c0>
+    └ <Thread(Thread-5, started 140149172082432)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x7f770865d680>
+    └ <Thread(Thread-5, started 140149172082432)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-5, started 140149172082432)>
+    │    │        │    └ (4,)
+    │    │        └ <Thread(Thread-5, started 140149172082432)>
+    │    └ <function subrunner at 0x7f7707b7c0e0>
+    └ <Thread(Thread-5, started 140149172082432)>
+
+  File "testing.py", line 34, in subrunner
+    with BucketeerContext(current_bucket, "testService") as api_key:
+         │                │                                 └ None
+         │                └ <bucketeer.bucketeer.Bucketeer object at 0x7f7707bd7990>
+         └ <class 'bucketeer.bucketeer.BucketeerContext'>
+
+> File "/home/mustafa/Development/bucketeer/bucketeer/bucketeer.py", line 40, in __enter__
+    key_value=try_latest_key_from_obj['_key'],
+              └ '51bd8528-cf38-4274-b67a-066540431273'
+
+TypeError: string indices must be integers
+2020-08-26 02:12:08.560 | ERROR    | bucketeer.bucketeer:__enter__:45 - Unable to grab latest key due to unhandled error.
+Traceback (most recent call last):
+
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7f770865d8c0>
+    └ <Thread(Thread-10, started 140148658394880)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x7f770865d680>
+    └ <Thread(Thread-10, started 140148658394880)>
+  File "/home/mustafa/.pyenv/versions/3.7.6/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-10, started 140148658394880)>
+    │    │        │    └ (9,)
+    │    │        └ <Thread(Thread-10, started 140148658394880)>
+    │    └ <function subrunner at 0x7f7707b7c0e0>
+    └ <Thread(Thread-10, started 140148658394880)>
+
+  File "testing.py", line 34, in subrunner
+    with BucketeerContext(current_bucket, "testService") as api_key:
+         │                │                                 └ None
+         │                └ <bucketeer.bucketeer.Bucketeer object at 0x7f7707bd7990>
+         └ <class 'bucketeer.bucketeer.BucketeerContext'>
+
+> File "/home/mustafa/Development/bucketeer/bucketeer/bucketeer.py", line 40, in __enter__
+    key_value=try_latest_key_from_obj['_key'],
+              └ '51bd8528-cf38-4274-b67a-066540431273'
+
+TypeError: string indices must be integers

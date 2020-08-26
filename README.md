@@ -1,5 +1,5 @@
 
-# 🪣 Bucketeer
+# 🌊 Bucketeer
 
 #### Still in developement.
 

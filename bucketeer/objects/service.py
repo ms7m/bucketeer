@@ -31,8 +31,19 @@ class Service:
     def raw_key_list(self):
         return self.__raw_key_list
 
+
     @property
-    def key_list(self):
+    def key_list_with_weights(self):
+        new_list = []
+        for key in self.key_list:
+            logger.info(f"Adding weight: {key.weight} for {key.key}")
+            for weight_add in range(0, key.weight):
+                new_list.append(key)
+        
+        return new_list
+                
+    @property
+    def key_list(self) -> typing.List[Key]:
         return self.__keys__
 
     @property

@@ -1,4 +1,5 @@
 
+from bucketeer.objects.key import Key
 from bucketeer.objects import key
 from bucketeer.objects import service
 import typing
@@ -28,25 +29,21 @@ class BucketeerContext(object):
 
         self._current_key = None
 
-    def __enter__(self):
+
+    def __enter__(self) -> Key:
         try:
-            try_latest_key_from_obj =  self._object.passed_object.get_lowest_used_key(service=self._selected_service)
-            if try_latest_key_from_obj == False:
-                logger.error("Unable to retireve latest key..")
+            get_lowest_key_from_object = self._object.passed_object.get_lowest_used_key(service=self._selected_service)
+            if get_lowest_key_from_object == False:
+                logger.error("Unable to retrieve latest key.")
                 return None
-        
-            self._current_key = try_latest_key_from_obj
-            return ReturnedKey(
-                key_value=try_latest_key_from_obj['_key'],
-                key_watcher_amount=try_latest_key_from_obj['_amt'],
-                service=try_latest_key_from_obj['_ser']
-            )
+            self._current_key = get_lowest_key_from_object
+            return get_lowest_key_from_object
         except Exception:
-            logger.exception("Unable to grab latest key due to unhandled error.")
+            logger.exception("unable to grab latest key due to unhandled error.")
             return None
-    
+
     def __exit__(self, type, value, traceback):
-        attempt_removal = self._object.passed_object._remove_counter_to_key(key=self._current_key, service=self._selected_service)
+        attempt_removal = self._object.passed_object._remove_counter_to_key(key=self._current_key)
         #logger.info(f"Removal: {attempt_removal}")
         
 

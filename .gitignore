@@ -3,3 +3,6 @@
 .vscode/*
 testing.py
 *.log
+
+build/*
+*.egg-info

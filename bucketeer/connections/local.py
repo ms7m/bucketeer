@@ -62,7 +62,7 @@ class LocalReferencer(Connection):
         try:
             selected_service = key._bucketeer_properties['service']
             selected_lookup_key = key._bucketeer_properties['unique']
-            if self._referencer['services'][selected_service]['watcher'][selected_lookup_key] - 1 <= 0:
+            if self._referencer['services'][selected_service]['watcher'][selected_lookup_key] - 1 < 0:
                 logger.warning("Value would go lower then 0.")
             else:
                 self._referencer['services'][selected_service]['watcher'][selected_lookup_key] - 1
